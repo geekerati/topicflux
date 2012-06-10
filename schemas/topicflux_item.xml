@@ -1,0 +1,4 @@
+<table name="topicflux_item">
+	<column name="item_id" type="number" size="11" notnull="notnull" primary_key="primary_key" />
+	<column name="topic_srl" type="number" size="11" />
+</table>
