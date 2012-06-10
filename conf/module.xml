@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<grants />
+	<permissions />
+	<actions>
+		<action name="dispTopicfluxAdminIndex" type="view" admin_index="true" menu_name="topicflux" menu_index="true" />
+	</actions>
+	<menus>
+		<menu name="topicflux" type="all">
+			<title xml:lang="ko">Topic Flux</title>
+		</menu>
+	</menus>
+</module>
