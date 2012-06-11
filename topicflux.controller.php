@@ -20,7 +20,12 @@ class topicfluxController extends topicflux
 		{
 			debugPrint('발견');
 			Context::addJsFile('./modules/topicflux/tpl/js/topicflux.common.js');
-			Context::addCssFile('./modules/topicflux/tpl/css/topicflux.common.css');
+			Context::addCssFile('./modules/topicflux/tpl/css/topicflux.controllBox.css');
+
+			$tpl_path = sprintf('%stpl', $this->module_path);
+			$tpl_file = '_castControllBox';
+			$oTemplate = &TemplateHandler::getInstance();
+			$output .= $oTemplate->compile($tpl_path, $tpl_file);
 		}
 	}
 }

@@ -4,6 +4,7 @@
 	<permissions />
 	<actions>
 		<action name="dispTopicfluxAdminIndex" type="view" admin_index="true" menu_name="topicflux" menu_index="true" />
+		<action name="dispTopicfluxEditor" type="view" />
 	</actions>
 	<menus>
 		<menu name="topicflux" type="all">

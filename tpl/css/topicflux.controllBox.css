@@ -1,0 +1,44 @@
+.topiccast-controll-box {
+	position:fixed;
+	bottom:10px;
+	right:10px;
+}
+.topiccast-controll-box .controll {
+	padding:5px;
+}
+.topiccast-controll-box.enable {
+	display:block;
+	bottom:0;
+	left:0;
+	border-radius:5px;
+	width:100%;
+	background:#000;
+}
+.topiccast-controll-box.enable .edit-enable {
+	display:none;
+}
+
+
+/* !topiccast-toolbar-container */
+.topiccast-toolbar-container {
+	position:relative;
+	border-top:3px solid #7663D4;
+}
+.topiccast-toolbar-container button {
+	position:absolute;
+	right:0;
+	margin:0;
+	padding:3px 10px;
+	border:0 none;
+	border-radius:0px 0px 10px 10px;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFF;
+	opacity:0.6;
+	cursor:pointer;
+	background:#7663D4;
+	z-index:1000;
+}
+.topiccast-toolbar-container button:hover {
+	opacity:1;
+}
