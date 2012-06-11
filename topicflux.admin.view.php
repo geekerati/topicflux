@@ -12,5 +12,11 @@ class topicfluxAdminView extends topicflux
 	 **/
 	function dispTopicfluxAdminIndex()
 	{
+	
+		$oTopicfluxModel = &getModel('topicflux');
+		$topicList = $oTopicfluxModel->getListTopic();
+
+		Context::set('topicList', $topicList->data);
+		Context::set('page_navigation', $topicList->page_navigation);
 	}
 }
