@@ -12,4 +12,15 @@ class topicfluxModel extends topicflux
 
 		return $output;
 	}
+	
+	/**
+	 * @brief 토픽 정보 반환
+	 **/
+	public function getTopicInfo($topic_srl)
+	{
+		$cond->topic_srl = $topic_srl;
+		$output = executeQuery('topicflux.getTopic', $cond);
+		
+		return $output->data;
+	}
 }

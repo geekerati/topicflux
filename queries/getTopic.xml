@@ -1,0 +1,11 @@
+<query id="getTopic" action="select">
+	<tables>
+		<table name="topicflux_topic" />
+	</tables>
+	<columns>
+		<column name="*" />
+	</columns>
+	<conditions>
+		<condition operation="equal" column="topic_srl" var="topic_srl" notnull="notnull" />
+	</conditions>
+</query>
