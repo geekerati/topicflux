@@ -23,4 +23,14 @@ class topicfluxModel extends topicflux
 		
 		return $output->data;
 	}
+	
+	/**
+	 * @brief cast 정보 반환
+	 **/
+	function getCastInfo($cast_id)
+	{
+		$cond->cast_id = $cast_id;
+		$output = executeQuery('topicflux.getCast', $cond);
+		debugPrint($output);
+	}
 }

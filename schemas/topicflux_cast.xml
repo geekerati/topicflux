@@ -1,0 +1,5 @@
+<table name="topicflux_cast" brief="topiccast 위젯 설정">
+	<column name="cast_id" type="varchar" size="30" notnull="notnull" primary_key="primary_key" />
+	<column name="setting" type="text" />
+	<column name="regdate" type="date" />
+</table>
