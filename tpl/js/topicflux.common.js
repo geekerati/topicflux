@@ -24,9 +24,10 @@
 				$widgetContainer.each(function() {
 					var $_this = $(this);
 					var $_toolbar = $toolbarContainer.clone();
+					var _cast_id = $_this.data('cast-id');
 
 					$_toolbar.on('click', 'button', function() {
-						var _url = window.request_uri.setQuery('act', 'dispTopicfluxEditor')
+						var _url = window.request_uri.setQuery('act', 'dispTopicfluxEditor').setQuery('cast_id', _cast_id);
 						window.open(_url, 'id', 'width=900, height=600, location=0, status=0, scrollbars=1');
 					});
 
