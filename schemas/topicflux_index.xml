@@ -1,0 +1,7 @@
+<table name="topicflux_index" brief="토픽 아이템 인덱스">
+	<column name="item_id" type="number" notnull="notnull" size="64" primary_key="primary_key" auto_increment="auto_increment" />
+	<column name="topic_srl" type="number" size="11" />
+	<column name="status" type="varchar" size="20" default="PUBLISHED" brief="노출 상태" />
+	<column name="regdate" type="date" />
+	<column name="list_order" type="number" size="11" />
+</table>
