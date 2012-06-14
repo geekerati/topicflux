@@ -27,13 +27,17 @@ class topicfluxModel extends topicflux
 	/**
 	 * @brief cast 정보 반환
 	 **/
-	function getCastInfo($cast_id)
+	public function getCastObject($cast_id)
 	{
+		$castObject = new TopicFluxCastObject($cast_id);
+		
 		$cond->cast_id = $cast_id;
 		$output = executeQuery('topicflux.getCast', $cond);
 		if(!$output->data) $output->data = array();
 		$output->data->setting = unserialize($output->data->setting);
+		
+		$castObject->adds($output->data);
 
-		return $output->data;
+		return $castObject;
 	}
 }

@@ -1,4 +1,8 @@
 <?php
+require_once(_XE_PATH_.'modules/topicflux/class.TopicFluxObject.php');
+require_once(_XE_PATH_.'modules/topicflux/class.TopicFluxCastObject.php');
+require_once(_XE_PATH_.'modules/topicflux/class.TopicFluxItemObject.php');
+
 class topicflux extends ModuleObject
 {
 	private $add_triggers = array(
